@@ -1,0 +1,38 @@
+1.安装 全局webpack  npm install webpack -g（具体不行的话就回去看视频）
+2. 全局安装vue-cli   npm install --global vue-cli
+3.下载脚架vue init webpack baoge（后面是名字自己许）
+安装过程中除了Install vue-router? (Y/n）y 外！其他的都是no
+4.npm install
+5.启动项目npm run dev
+
+
+6.跳转用路由来做（vue-router）这里要下载包来完成请百度vue-router去官网查文档https://router.vuejs.org
+	1.先下载vue-router    命令： npm i vue-router
+	2. <router-link to="/singer" class="tab-item">
+            <span class="tab-link">歌手</span>
+//      </router-link>这个是你要点击的页面（router-link相当于a标签. to是要跳转到哪里！相当于href）
+		 <router-view></router-view>这个是要点击后显示的地方
+	3.接着去js文件引用 
+	4.去官网看过程！或者去router/index.js看
+	
+7.轮播图
+
+	1.请求接口数据：用vue-resource也可以用ajax（这个包主要是链接数据用的）跨域
+		一：下载包npm install vue-resource（记得去总体那里引包,记得要用vue.use（））
+		二：链接接口后渲染到页面上
+		请求数据还有另一个方法！下载axios包辅助
+	2.下载better-scroll包（主要是弄轮播用的）
+		注意查看下api文档
+		2.2下载包babel-polyfill来辅助轮播图
+
+8.懒加载
+	下载包vue-lazyload
+			<img v-lazy="item.imgurl" width="60" height="60"/>
+			
+9.提示加载中组件
+	在base中的loading中
+	
+10.第二个页面
+	在base中的listview中
+	
+11.vuex是状态管理工具，就是组件1和组件之前的传值，不是父级和子级之前的传值！可用于所有的组件
